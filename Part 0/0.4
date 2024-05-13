@@ -1,0 +1,11 @@
+graph TD;
+    A[User writes note & clicks Save] --> B[JavaScript executes event handler];
+    B --> C[JavaScript sends POST request to server];
+    C --> D[Server creates new note];
+    D --> E[Server responds with status code];
+    E --> F[JavaScript receives response];
+    F --> G[JavaScript updates page with new note];
+
+
+
+This diagram illustrates the process of creating a new note by entering text into the designated field and selecting the Save option. Upon activation, the JavaScript script triggers an event handler to dispatch a POST request to the server for note creation. Subsequently, the server replies with a status code that is captured by the JavaScript script to refresh the page with the newly added note.
